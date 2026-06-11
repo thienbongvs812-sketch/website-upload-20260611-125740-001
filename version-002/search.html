@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索影片 - 动作电影网</title>
+    <meta name="description" content="提供免费高清观看国产电视剧全集服务，同时包含最新电影在线资源，平台以国产内容为核心，片源丰富更新快。">
+    <meta name="keywords" content="免费高清观看国产电视剧_全集最新电影在线-动作电影网,国产,视频,免费,在线观看,高清,影视大全">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="动作电影网首页">
+            <span class="brand-mark">▶</span>
+            <span class="brand-text">动作电影网</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="打开导航" data-nav-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="main-nav" data-main-nav>
+            <a href="index.html">首页</a>
+            <a href="categories.html">分类</a>
+            <a href="ranking.html">排行榜</a>
+            <a href="search.html">搜索</a>
+            <a href="movies/page-1.html">全部影片</a>
+        </nav>
+        <form class="header-search" action="search.html" method="get">
+            <input type="search" name="q" placeholder="搜索片名、类型、年份" aria-label="搜索影片">
+            <button type="submit">搜索</button>
+        </form>
+    </div>
+</header>
+<main class="page-main">
+    <section class="page-hero small-hero search-hero">
+        <div>
+            <span class="eyebrow">搜索 / 筛选</span>
+            <h1>搜索片名、年份、地区、题材标签</h1>
+            <p>支持关键词、地区、类型、年份与题材多条件筛选。</p>
+            <form class="big-search" data-search-form>
+                <input type="search" name="q" placeholder="输入片名、演员线索、题材或年份" autocomplete="off">
+                <button type="submit">开始搜索</button>
+            </form>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="filter-bar" data-filter-bar>
+            <select data-filter="region" aria-label="地区筛选">
+                <option value="">全部地区</option>
+                <option value="国产">国产</option>
+                <option value="港台">港台</option>
+                <option value="日韩">日韩</option>
+                <option value="欧美">欧美</option>
+                <option value="其他">其他</option>
+            </select>
+            <select data-filter="type" aria-label="类型筛选">
+                <option value="">全部类型</option>
+            </select>
+            <select data-filter="year" aria-label="年份筛选">
+                <option value="">全部年份</option>
+            </select>
+            <select data-filter="genre" aria-label="题材筛选">
+                <option value="">全部题材</option>
+            </select>
+        </div>
+        <div class="search-summary" data-search-summary>正在载入影片数据...</div>
+        <div class="movie-grid" data-search-results></div>
+        <div class="load-more-wrap">
+            <button class="btn btn-primary" type="button" data-load-more>加载更多</button>
+        </div>
+    </section>
+</main>
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-about">
+            <div class="footer-logo"><span class="brand-mark">▶</span>动作电影网</div>
+            <p>提供免费高清观看国产电视剧全集服务，同时包含最新电影在线资源，平台以国产内容为核心，片源丰富更新快。</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">首页</a>
+            <a href="categories.html">分类总览</a>
+            <a href="ranking.html">排行榜</a>
+            <a href="search.html">搜索影片</a>
+            <a href="movies/page-1.html">全部影片</a>
+        </div>
+    </div>
+</footer>
+<script src="assets/app.js"></script>
+<script src="assets/data.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
